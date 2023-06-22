@@ -194,6 +194,18 @@ section#imagemLateral {
     outline: none;
 }
 
+/* Estilizando campos preenchidos automaticamente */
+.input:-webkit-autofill,
+.input:-webkit-autofill::first-line,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:focus::first-line,
+.input:-webkit-autofill:hover{
+  -webkit-box-shadow: 0 0 0px 1000px #2E3834 inset;
+  box-shadow: 0 0 0px 1000px #2E3834 inset;
+  -webkit-text-fill-color: white !important; /* Cor do texto */
+  color: white !important;
+}
+
 label {
     color: var(--cinzaLabel);
     font-size: 16px;

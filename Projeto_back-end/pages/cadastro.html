@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style/cadastro.css" media="all">
+    <link rel="stylesheet" href="style/mediaCadastro.css">
+</head>
+
+<body>
+    <main id="mainPrincipal">
+        <section id="cadastro">
+
+            <article id="topo">
+
+                <aside id="logo">
+                    <img src="../img/logo.png" alt="Logo">
+                </aside>
+
+                <aside id="textoTopo">
+                    <p>Cadastre-se</p>
+                </aside>
+
+            </article>
+
+            <article id="formulario">
+                
+                <form action="teste.php" method="post">
+                    <div class="group groupNome">
+                        <input required="required" name="prenome" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nome</label>
+                    </div>
+
+                    <div class="group groupSobrenome">
+                        <input required="required" name="sobrenome" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Sobrenome</label>
+                    </div>
+
+                    <div class="group groupEmail">
+                        <input required="required" name="email" type="email" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                
+                    <div class="group">
+                        <input required="required" name="senha" type="password" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Senha</label>
+                    </div>
+
+                    <div class="group">
+                        <input required="required" name="username" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nome de usuário</label>
+                    </div>
+
+            </article>
+
+            <article id="cadastar">
+                <input type="submit" value="Criar">
+                </form>
+            </article>
+
+            <article id="textoBaixo">
+                Já possui uma conta?
+            </article>
+
+            <article id="login">
+                <a href="#"><button>Login</button></a>
+            </article>
+
+        </section>
+
+        <section id="imagemLateral">
+            <img src="../img/menindaCalendario_clipdrop-enhance.png" alt="Imagem Lateral">
+        </section>
+    </main>
+</body>
+
+</html>

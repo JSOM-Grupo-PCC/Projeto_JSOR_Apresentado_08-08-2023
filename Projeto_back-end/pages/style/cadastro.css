@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+:root {
+    --cinzaDeFundo: #2E3834;
+    --azulBotao: #004B83;
+    --cinzaBotao: #666666;
+    --brancoInput: white;
+    --cinzaLabel: #dbdbdb;
+    --cinzaInformacoes: #666666;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #2E3834;
+}
+
+input::placeholder {
+    color: white;
+
+}
+
+input:focus {
+    outline: none;
+
+}
+
+
+
+
+main#mainPrincipal {
+    /* background-color: rgba(255, 255, 255, 0.757); */
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section#cadastro {
+    display: flex;
+    background-color: var(--cinzaDeFundo);
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section#cadastro>article {
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    /* margin: 1.5vw 5vw 1.5vw 5vw; */
+    width: 90vw;
+
+}
+
+/* certo */
+article#formulario input {
+    width: 100%;
+    padding: 8px 0px 8px 13px;
+    background-color: #2E3834;
+    color: var(--Input);
+    margin: 10px 0px 10px 0px;
+
+}
+
+/* div.group>input {
+    border-radius: 2px;
+
+} */
+
+aside#textoTopo {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+
+}
+
+aside#textoTopo::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.37rem;
+    background-color: var(--azulBotao);
+    border-radius: 10px;
+
+}
+
+aside#logo>img {
+    height: 35px;
+    margin-bottom: 30px;
+    filter: drop-shadow(4px 3px 0px #004B83);
+
+}
+
+article#textoBaixo {
+    font-size: 0.85em;
+    margin-bottom: 30px;
+
+}
+
+article#login button {
+    background-color: var(--azulBotao);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+
+
+}
+
+article#login button:hover,
+input[type="submit"]:hover,
+input {
+    cursor: pointer;
+}
+
+article#login button,
+input[type="submit"],
+article#formulario input {
+
+    font-size: 0.9em;
+}
+
+
+input[type="submit"] {
+    background-color: var(--cinzaBotao);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+
+}
+
+section#imagemLateral {
+    display: none;
+
+}
+
+/* 
+@media screen and (min-width: 600px) and (max-width: 768px){
+        section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 150%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+
+
+} */
+
+
+.group {
+    position: relative;
+    display: inline;
+
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--brancoInput);
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: var(--cinzaLabel);
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    bottom: 20px;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -3px;
+    font-size: 14px;
+    color: var(--cinzaBotao);
+}
+
+.input:focus~label::after,
+.input:valid~label::after {
+    content: ':';
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}

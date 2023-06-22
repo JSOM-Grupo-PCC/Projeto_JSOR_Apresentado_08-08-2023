@@ -1,2 +1,2 @@
-# Projeto
-Pasta destinada aos arquivos do projeto de ASW, BD e PSW 1
+# Projeto_back-end
+Pasta destinada aos arquivos da parte back-end do nosso Projeto integrado das matérias (PSW1, BD, ASW).

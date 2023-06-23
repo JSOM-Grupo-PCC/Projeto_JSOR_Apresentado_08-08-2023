@@ -46,7 +46,7 @@ $query->execute(['username' => $username, 'senha' => $senha, 'email' => $email, 
 $_SESSION['username'] = $username;
 $_SESSION['email'] = $email;
 
-echo '<script>alert("Registro bem-sucedido"); window.location.href = "../../pages/index.php";</script>';
+echo '<script>alert("Registro bem-sucedido"); window.location.href = "../../pages";</script>';
 exit();
 
 ?>

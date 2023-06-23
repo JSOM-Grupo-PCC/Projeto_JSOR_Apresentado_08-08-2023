@@ -63,7 +63,7 @@ section#cadastro {
 
 }
 
-section#cadastro>article {
+section#cadastro article {
     margin-bottom: 1vw;
     margin-top: 1vw;
     margin-left: 5vw;
@@ -90,6 +90,7 @@ article#formulario input {
 
 aside#textoTopo {
     font-size: 1.5em;
+    padding: 0px 0px 4px 0px;
     margin-bottom: 0px;
 
 }
@@ -104,7 +105,26 @@ aside#textoTopo::after {
 
 }
 
-aside#logo>img {
+div.centro {
+    height: 70%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+article.cadasLogin {
+    margin-top: 0px;
+
+}
+
+article#logo>img {
+    margin-bottom: 12vh;
+
+
+}
+
+article#logo>img, aside#logo>img {
     height: 35px;
     margin-bottom: 30px;
     filter: drop-shadow(4px 3px 0px #004B83);
@@ -275,4 +295,16 @@ label {
         width: 0;
         background: transparent;
     }
+}
+
+/* Estilizando campos preenchidos automaticamente */
+.input:-webkit-autofill,
+.input:-webkit-autofill::first-line,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:focus::first-line,
+.input:-webkit-autofill:hover{
+  -webkit-box-shadow: 0 0 0px 1000px #2E3834 inset;
+  box-shadow: 0 0 0px 1000px #2E3834 inset;
+  -webkit-text-fill-color: white !important; /* Cor do texto */
+  color: white !important;
 }

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="style/cadastro.css" media="all">
-    <link rel="stylesheet" href="style/mediaCadastro.css">
+    <link rel="stylesheet" href="style/cadastroLogin.css" media="all">
+    <link rel="stylesheet" href="style/mediaCadastroLogin.css">
+
+
 </head>
 
 <body>
@@ -26,47 +28,47 @@
             </article>
 
             <article id="formulario">
-                
-                <form action="teste.php" method="post">
+
+                <form action="../metodos/sis_cadastro_login/cadastro.php" method="post" autocomplete="on">
                     <div class="group groupNome">
-                        <input required="required" name="prenome" type="text" class="input">
+                        <input required name="prenome" id="iprenome" type="text" class="input" autocomplete="on">
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Nome</label>
+                        <label for="iprenome">Nome</label>
                     </div>
 
                     <div class="group groupSobrenome">
-                        <input required="required" name="sobrenome" type="text" class="input">
+                        <input required name="sobrenome" type="text" class="input" id="isobrenome" autocomplete="on">
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Sobrenome</label>
+                        <label for="isobrenome">Sobrenome</label>
                     </div>
 
                     <div class="group groupEmail">
-                        <input required="required" name="email" type="email" class="input">
+                        <input required id="iemail" name="email" type="email" class="input vazio" autocomplete="on">
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Email</label>
-                    </div>
-                
-                    <div class="group">
-                        <input required="required" name="senha" type="password" class="input">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Senha</label>
+                        <label for="iemail" >Email</label>
                     </div>
 
-                    <div class="group">
-                        <input required="required" name="username" type="text" class="input">
+                    <div class="group groupSenha">
+                        <input required name="senha" type="password" class="input" id="isenha" autocomplete="on">
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Nome de usuário</label>
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <div class="group groupUsername">
+                        <input required name="username" id="iusername" type="text" class="input" autocomplete="on">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="iusername">Nome de usuário</label>
                     </div>
 
             </article>
 
             <article id="cadastar">
-                <input type="submit" value="Criar">
+                <input type="submit" value="Cria">
                 </form>
             </article>
 
@@ -75,7 +77,7 @@
             </article>
 
             <article id="login">
-                <a href="#"><button>Login</button></a>
+                <a href="login.html"><button>Login</button></a>
             </article>
 
         </section>
@@ -85,5 +87,7 @@
         </section>
     </main>
 </body>
+
+
 
 </html>

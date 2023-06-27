@@ -132,7 +132,7 @@ $mail = new PHPMailer(true); // Instancia um novo objeto PHPMailer
                         Lembro?
                     </article>
                     <article id="login" class="cadasLogin">
-                        <a href="login.php"><button>Voutar</button></a>
+                        <a href="login.php"><button>Voltar</button></a>
                     </article>
                 </div>
             </div>

@@ -68,7 +68,7 @@
             </article>
 
             <article id="cadastar">
-                <input type="submit" value="Cria">
+                <input type="submit" value="Cadastrar">
                 </form>
             </article>
 

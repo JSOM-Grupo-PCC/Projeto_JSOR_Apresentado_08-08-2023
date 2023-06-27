@@ -98,7 +98,7 @@ require '../metodos/sis_cadastro_login/conn.php'; // Requer o arquivo de conexã
                         Lembro?
                     </article>
                     <article id="login" class="cadasLogin">
-                        <a href="login.php"><button>Voutar</button></a>
+                        <a href="login.php"><button>Voltar</button></a>
                     </article>
                 </div>
             </div>

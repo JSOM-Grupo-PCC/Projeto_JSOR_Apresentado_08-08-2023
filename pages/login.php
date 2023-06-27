@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style/cadastroLogin.css">
+    <link rel="stylesheet" href="style/cadastroLogi.css">
     <link rel="stylesheet" href="style/mediaCadastroLogin.css">
 
 
@@ -33,8 +36,7 @@
 
                     <form action="../metodos/sis_cadastro_login/login.php" method="post">
                         <!--Mensagens de feedback, vem de recuperar senha-->
-                        <?php 
-                        session_start();
+                        <?php
                         if (isset($_SESSION['msg'])) {
                             echo $_SESSION['msg'];
                             unset($_SESSION['msg']);
@@ -54,10 +56,11 @@
                             <label for="isenha">Senha</label>
                         </div>
 
-                        <article id="textoBaixo">
-                            <a href="rec_senha.php">Esqueceu a senha?</a>
-                        </article>
 
+
+                </article>
+                <article id="textoBaixo">
+                    <a href="rec_senha.php">Esqueceu a senha?</a>
                 </article>
 
                 <div>

@@ -1,0 +1,419 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    section#imagemLateral img {
+        width: 60vw;
+
+    }
+
+    /* 
+    article#formulario input {
+        width: calc(50vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+    } */
+
+    article#formulario input {
+        width: 100%;
+        padding: 8px 0px 8px 13px;
+        background-color: #2E3834;
+        color: var(--brancoInput);
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        width: 41vw;
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 8px;
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 8px;
+
+    }
+
+    @media screen and (max-height: 545px) {
+        article#formulario form {
+            display: flex;
+
+            width: 100%;
+            flex-wrap: wrap;
+            border-radius: 5px;
+        }
+
+        article#formulario .input {
+            width: calc(100% - 10px);
+            padding: 8px 0px 8px 13px;
+            background-color: #2E3834;
+            color: var(--brancoInput);
+            margin: 10px 5px 10px 5px;
+        }
+        .group {
+            display: inline;
+            width: 50%;
+        }
+
+        .groupNome {
+            width: 40%;
+
+        }
+        .groupSobrenome {
+            width: 60%;
+
+        }
+
+        .groupEmail {
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    section#imagemLateral img {
+        max-width: 65vw;
+
+    }
+    
+
+    article#formulario input {
+        width: 100%;
+        padding: 8px 0px 8px 13px;
+        background-color: #2E3834;
+        color: var(--brancoInput);
+        margin: 10px 0px 10px 0px;
+    
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        max-width: 36vw;
+
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 8px;
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 8px;
+
+    }
+
+    @media screen and (max-height: 570px) {
+        article#formulario form {
+            display: flex;
+
+            width: 100%;
+            flex-wrap: wrap;
+            border-radius: 5px;
+        }
+
+        article#formulario .input {
+            width: calc(100% - 10px);
+            padding: 8px 0px 8px 13px;
+            background-color: #2E3834;
+            color: var(--brancoInput);
+            margin: 10px 5px 10px 5px;
+        }
+
+        .group {
+            display: inline;
+            width: 50%;
+        }
+
+        .groupNome {
+            width: 40%;
+
+        }
+        .groupSobrenome {
+            width: 60%;
+
+        }
+
+        .groupEmail {
+            width: 100%;
+        }
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    section#imagemLateral img {
+        width: 63vw;
+
+    }
+
+
+    /* article#formulario input {
+        width: calc(37vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+    } */
+    article#formulario input {
+        width: calc(37vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        background-color: #2E3834;
+        color: var(--brancoInput);
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        width: calc(38vw - 10vw);
+
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(37vw - 10vw);
+        padding: 8px;
+
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(37vw - 10vw);
+        padding: 8px;
+
+    }
+
+    @media screen and (max-height: 580px) {
+        article#formulario form {
+            display: flex;
+
+            width: 100%;
+            flex-wrap: wrap;
+            border-radius: 5px;
+        }
+
+        article#formulario .input {
+            width: calc(100% - 10px);
+            padding: 8px 0px 8px 13px;
+            background-color: #2E3834;
+            color: var(--brancoInput);
+            margin: 10px 5px 10px 5px;
+        }
+        .group {
+            display: inline;
+            width: 50%;
+        }
+
+        .groupNome {
+            width: 40%;
+
+        }
+        .groupSobrenome {
+            width: 60%;
+
+        }
+
+        .groupEmail {
+            width: 100%;
+        }
+    }
+
+
+
+
+}
+
+@media screen and (max-height: 525px) {
+    article#formulario form {
+        display: flex;
+
+        width: 100%;
+        flex-wrap: wrap;
+        border-radius: 5px;
+    }
+
+    article#formulario .input {
+        width: calc(100% - 10px);
+        padding: 8px 0px 8px 13px;
+        background-color: #2E3834;
+        color: var(--brancoInput);
+        margin: 10px 5px 10px 5px;
+    }
+
+    .group {
+        display: inline;
+        width: 50%;
+    }
+
+    .groupNome {
+        width: 40%;
+
+    }
+    .groupSobrenome {
+        width: 60%;
+
+    }
+
+    .groupEmail {
+        width: 100%;
+    }
+}

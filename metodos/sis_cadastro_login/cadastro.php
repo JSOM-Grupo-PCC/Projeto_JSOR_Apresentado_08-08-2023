@@ -43,10 +43,12 @@ if ($user) {
 $query = $conn->prepare("INSERT INTO usuario (username, senha, email, prenome, sobrenome) VALUES (:username, :senha, :email, :prenome, :sobrenome)");
 $query->execute(['username' => $username, 'senha' => $senha, 'email' => $email, 'prenome' => $prenome, 'sobrenome' => $sobrenome]);
 
-$_SESSION['username'] = $username;
+
+$_SESSION['id'] = $username;
+$_SESSION['userLogin'] = $username;
 $_SESSION['email'] = $email;
 
-echo '<script>alert("Registro bem-sucedido"); window.location.href = "../../pages";</script>';
+echo '<script>alert("Registro bem-sucedido"); window.location.href = "../../";</script>';
 exit();
 
 ?>

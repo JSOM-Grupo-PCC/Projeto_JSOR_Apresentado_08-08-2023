@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once('conn.php');
 
 $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL); // Obtém e valida o email fornecido pelo usuário
@@ -13,9 +14,10 @@ if (!empty($user)) {
     $senhaCriptografada = substr(hash('sha256', $senha), 0, 32); // Criptografa a senha fornecida pelo usuário 
 
     if ($senhaCriptografada === $user['senha']) { // Compara a senha criptografada com a senha armazenada no banco de dados
-        session_start();
-        $_SESSION['username'] = $user['username']; // Armazena o usernome do usuário na sessão
-        header('location: ../../pages/index.php'); // Redireciona o usuário para a página inicial
+        
+        $_SESSION['userLogin'] = $user['username'];
+        $_SESSION['id'] = $user['username']; // Armazena o usernome do usuário na sessão
+        header('location: ../../'); // Redireciona o usuário para a página inicial
     } else {
         echo '<script>alert("Senha incorreta. Por favor, tente novamente."); window.history.back();</script>';
         exit();

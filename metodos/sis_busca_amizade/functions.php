@@ -24,7 +24,7 @@ function get_users($conn, $search_term = null) {
         foreach ($get as $dados) {
             $username = $dados['username'];
             echo "<div style='box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); padding: 10px; margin-bottom: 10px;'>";
-            echo "<a style='text-decoration: none !important; color: #83d8ff;' href='/teste-3_Projeto_Back-amizade/pages/perfil.php?pagina=perfil&id={$username}'>{$username}</a><br>";
+            echo "<a style='text-decoration: none !important; color: #83d8ff;' href='/Projeto_Back-end/pages/perfil.php?pagina=perfil&id={$username}'>{$username}</a><br>";
             echo $dados["prenome"] . " " . $dados["sobrenome"] . "<br>";
             echo "</div>";
         }
@@ -88,12 +88,12 @@ function send_solicitation($conn, $usaername_para) {
         $sql->execute();
 
         if ($sql->rowCount() > 0) {
-            redireciona("/teste-3_Projeto_Back-amizade/pages/perfil.php?pagina=perfil&id={$usaername_para}");
+            redireciona("/Projeto_Back-end/pages/perfil.php?pagina=perfil&id={$usaername_para}");
         } else {
             return false;
         }
     } else {
-        redireciona("/teste-3_Projeto_Back-amizade/pages/perfil.php?pagina=perfil&id={$usaername_para}");
+        redireciona("/Projeto_Back-end/pages/perfil.php?pagina=perfil&id={$usaername_para}");
     }
 }
 
@@ -112,25 +112,25 @@ function verfica_solicitacoes($conn, $username_de, $usaername_para) {
         $dados = $get[0];
 
         if ($dados['status'] == 1) {
-            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/teste-3_Projeto_Back-amizade/pages/desfazer-amizade.php?pagina=desfazer-amizade&id={$dados['id']}'>Desfazer Amizade</a>";
+            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/Projeto_Back-end/pages/desfazer-amizade.php?pagina=desfazer-amizade&id={$dados['id']}'>Desfazer Amizade</a>";
             $_SESSION['usaername_para'] = $usaername_para;
         }
 
         if ($dados['usaername_para'] == $usaername_para && $dados['username_de'] == $username_de && $dados['status'] == 0) {
-            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/teste-3_Projeto_Back-amizade/pages/desfazer-amizade.php?pagina=desfazer-amizade&id={$dados['id']}'>Cancelar Solicitação</a>";
+            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/Projeto_Back-end/pages/desfazer-amizade.php?pagina=desfazer-amizade&id={$dados['id']}'>Cancelar Solicitação</a>";
             $_SESSION['usaername_para'] = $usaername_para;
         }
 
         if ($dados['username_de'] == $usaername_para && $dados['usaername_para'] == $username_de && $dados['status'] == 0) {
 
-            echo "<a style='text-decoration: none !important; color: #83d858;' href='/teste-3_Projeto_Back-amizade/pages/aceitar-amizade.php?pagina=aceitar-amizade&id={$dados['username_de']}'>Aceitar Solicitação</a>";
+            echo "<a style='text-decoration: none !important; color: #83d858;' href='/Projeto_Back-end/pages/aceitar-amizade.php?pagina=aceitar-amizade&id={$dados['username_de']}'>Aceitar Solicitação</a>";
 
-            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/teste-3_Projeto_Back-amizade/pages/recusar-solicitacao.php?pagina=desfazer-amizade&id={$dados['id']}'>Recusar Solicitação</a>";
+            echo "<a style='text-decoration: none !important; color: #ff0000;' href='/Projeto_Back-end/pages/recusar-solicitacao.php?pagina=desfazer-amizade&id={$dados['id']}'>Recusar Solicitação</a>";
 
             
         }
     } else if ($total <= 0 && $usaername_para != $username_de) {
-        echo "<a style='text-decoration: none !important; color: #83d858;' href='/teste-3_Projeto_Back-amizade/pages/solicitar-amizade.php?pagina=solicitar-amizade&id={$usaername_para}'>Adicionar Amigo</a>";
+        echo "<a style='text-decoration: none !important; color: #83d858;' href='/Projeto_Back-end/pages/solicitar-amizade.php?pagina=solicitar-amizade&id={$usaername_para}'>Adicionar Amigo</a>";
         $_SESSION['usaername_para'] = $usaername_para;
     }
 }
@@ -142,7 +142,7 @@ function deleta_solicitacao($conn, $id) {
     $sql->execute();
 
     if ($sql->rowCount() > 0) {
-        redireciona("/teste-3_Projeto_Back-amizade/pages/desfazer-amizade.php?pagina=desfazer-amizade");
+        redireciona("/Projeto_Back-end/pages/desfazer-amizade.php?pagina=desfazer-amizade");
     } else {
         return false;
     }
@@ -155,7 +155,7 @@ function recusar_solicitacao($conn, $id) {
     $sql->execute();
 
     if ($sql->rowCount() > 0) {
-        redireciona("/teste-3_Projeto_Back-amizade/pages/solicitacoes.php?pagina=solicitacoes");
+        redireciona("/Projeto_Back-end/pages/solicitacoes.php?pagina=solicitacoes");
     } else {
         return false;
     }
@@ -175,7 +175,7 @@ function aceita_solicitacao($conn, $username_de) {
 
         if ($dados['usaername_para'] == $_SESSION['id']) {
             if (atualiza_solicitacao($conn, $username_de, $_SESSION['id']) > 0) {
-                redireciona("/teste-3_Projeto_Back-amizade/pages/perfil.php?pagina=perfil&id={$username_de}");
+                redireciona("/Projeto_Back-end/pages/perfil.php?pagina=perfil&id={$username_de}");
             } else {
                 echo "erro ao atualizar;";
             }
@@ -216,13 +216,13 @@ function solicitacoes($conn) {
                 <ul>
                     <br>
                         <li style='list-style:none;'>
-                        <a style='color: #fff; font-weight:700; ' href='/teste-3_Projeto_Back-amizade/pages/perfil.php?pagina=perfil&id={$dados['username_de']}'>
+                        <a style='color: #fff; font-weight:700; ' href='/Projeto_Back-end/pages/perfil.php?pagina=perfil&id={$dados['username_de']}'>
                         {$dados['username_de']} 
                         <br>
 
-                        <a style='color: #83d858;' href='/teste-3_Projeto_Back-amizade/pages/aceitar-amizade.php?pagina=aceitar-amizade&id={$dados['username_de']}'>Aceitar Solicitação</a> 
+                        <a style='color: #83d858;' href='/Projeto_Back-end/pages/aceitar-amizade.php?pagina=aceitar-amizade&id={$dados['username_de']}'>Aceitar Solicitação</a> 
 
-                        <a style='color: #ff0000 ;' href='/teste-3_Projeto_Back-amizade/pages/recusar-solicitacao.php?pagina=recusar-solicitacao&id={$dados['id']}'>Recusar Solicitação</a>
+                        <a style='color: #ff0000 ;' href='/Projeto_Back-end/pages/recusar-solicitacao.php?pagina=recusar-solicitacao&id={$dados['id']}'>Recusar Solicitação</a>
                         </a>
                         </li>                    
                     <hr>

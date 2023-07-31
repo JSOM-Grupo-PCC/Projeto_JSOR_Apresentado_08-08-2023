@@ -3,7 +3,7 @@
 session_start();
 
 //Atribui os valores dos campos de formulário enviados
-$prenome = $_POST['prenome'];
+$prenome = ($_POST['prenome']);
 $sobrenome = $_POST['sobrenome'];
 $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 $senha = substr(hash('sha256', $_POST['senha']), 0, 32);

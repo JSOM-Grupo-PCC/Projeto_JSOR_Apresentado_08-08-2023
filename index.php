@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('metodos/sis_cadastro_login/val_sessao.php');
-validar_sessao('pages/login.php');
+validar_sessao('./pages/login.php');
 require_once "metodos/sis_busca_amizade/functions.php";
 ?>
 <!DOCTYPE html>
@@ -11,9 +11,9 @@ require_once "metodos/sis_busca_amizade/functions.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area de Trabalho</title>
-    <link rel="shortcut icon" href="img/logo_jsor.png" type="image/x-icon">
-    <script type="module" src="javascript/dark_nuvem_lista.js"></script>
-    <link rel="stylesheet" href="pages/style/areaTrabalho.css">
+    <link rel="shortcut icon" href="./img/logo_jsor.png" type="image/x-icon">
+    <script type="module" src="./javascript/dark_nuvem_lista.js"></script>
+    <link rel="stylesheet" href="./pages/style/areaTrabalho.css">
 </head>
 
 <body>
@@ -87,8 +87,7 @@ require_once "metodos/sis_busca_amizade/functions.php";
                     <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="quadros">
-                    <p class="card-text"><?php echo $_SESSION['userLogin'];?></p>
-                    <a href="./metodos/sis_cadastro_login/logout.php">sair</a>
+                    Quadro 1 (exemplo)
                 </div>
                 <div class="quadros">
                     Quadro 2 (exemplo)
@@ -111,7 +110,7 @@ require_once "metodos/sis_busca_amizade/functions.php";
         <section class="navigation">
             <ul>
                 <li class="list">
-                    <a href="pages/perfil.php">
+                    <a href="./pages/perfil.php">
                         <span class="icon">
                             <ion-icon name="person-circle-sharp"></ion-icon>
                         </span>
@@ -128,7 +127,7 @@ require_once "metodos/sis_busca_amizade/functions.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="./pages/ranking.php">
                         <span class="icon">
                             <ion-icon name="podium-sharp"></ion-icon>
                         </span>
@@ -136,7 +135,7 @@ require_once "metodos/sis_busca_amizade/functions.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="pages/adicionarAmigos.php">
+                    <a href="./pages/adicionarAmigos.php">
                         <span class="icon">
                             <ion-icon name="person-add-sharp"></ion-icon>
                         </span>

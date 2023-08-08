@@ -1,5 +1,5 @@
 <h1>JSOR Smart Schedule<h1><hr>
-<h4>4Sistema de Gerenciamento de Tarefas)<4h4> 
+<h3>Sistema de Gerenciamento de Tarefas</h3> 
 <br> 
 <h4>1. VISÃO GERAL DO CONTEXTO</h4>
   O JSOR Smart Schedule (Sistema de Gerenciamento de Tarefas) será amplamente
@@ -23,8 +23,8 @@ Schedule. <br> <br>
 mais lúdico, sem muitas dificuldades, onde cada usuário pode criar seu próprio cronograma e
 assim cuidar das suas atividades e se organizar como quiser.
 <h4>4. ARQUITETURA DE SOFTWARE</h4>
-  Front-end: Foi utilizado as linguagens HTML5, CSS e JavaScript.
-  Back-end: Foi utilizado as linguagens PHP8 é a biblioteca PHPMailer 
+  Front-end: Foi utilizado as linguagens HTML5, CSS e JavaScript.<br>
+  Back-end: Foi utilizado as linguagens PHP8 é a biblioteca PHPMailer <br>
   Banco de Dados: O SGDB (Sistema de Gerenciamento de Banco de Dados) foi o MySQL.
 
 

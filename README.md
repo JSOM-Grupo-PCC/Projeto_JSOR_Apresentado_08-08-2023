@@ -1,5 +1,5 @@
-<h1 liner="center">JSOR Smart Schedule<h1><hr>
-<h3>Sistema de Gerenciamento de Tarefas</h3> 
+<h1 align="center">JSOR Smart Schedule<h1><hr>
+<h3 align="center">Sistema de Gerenciamento de Tarefas</h3> 
 <br> 
 <h4>1. VISÃO GERAL DO CONTEXTO</h4>
   O JSOR Smart Schedule (Sistema de Gerenciamento de Tarefas) será amplamente

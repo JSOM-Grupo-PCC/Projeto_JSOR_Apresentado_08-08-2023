@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--corFundo);
+}
+:root {
+    --corTexto: #FFFFFF;
+    --corAzul: #004B83;
+    --azulLua: #005ea6;
+    --corFundo: #2E3834;
+    --corQuadros: #3A4540;
+    --navegation: #222327;
+    --margem: rgba(255, 255, 255, 0.466);
+    --boxshadow: #ffee59b4;
+}
+.white-mode:root {
+    --corTexto: black;
+    --corFundo: #E8E8E8;
+    --corQuadros: #BDBDBD;
+    --navegation: #BDBDBD;
+    --margem: rgba(34, 34, 34, 0.466);
+    --boxshadow: #ffb834;
+}
+main{
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
+    align-items: center;
+}
+section#podio{
+    display: flex;
+    width: 270px;
+    height: 130px;
+    margin-top: 5vh;
+    position: relative;
+    padding: 10px;
+    background-color:transparent;
+}
+#podio .left{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: flex-start;
+    width: 50%;
+    background-color: transparent;
+    padding-left: 10px;
+}
+#podio .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+    height: 130px;
+    width: 50%;
+    background-color: transparent;
+}
+#podio .imagem_ganhador{
+    width: 80px;
+    height: 70px;
+    background-color: var(--corQuadros);
+    border-radius: 5px;
+    border: solid 4px #cccccc;
+    box-shadow: 0px 0px 5px #cccccca8;
+    position: relative;
+}
+.texto{
+    width: 70px;
+    margin-top: 3px;
+    color: var(--corTexto);
+    text-align: center;
+    background-color: transparent;
+    line-height: 13px;
+    font-size: 9pt;
+}
+#vencedor{
+    position: absolute;
+    bottom: -18px;
+    left: 38%;
+}
+.imagem_ganhador#terceiro_lugar{
+    border: solid 4px #ad6666;
+    box-shadow: 0px 0px 5px 1px #ad6666a9;
+}
+.imagem_ganhador#primeiro_lugar{
+    border: solid 4px #f0df4d;
+    box-shadow: 1px 1px 10px 2px var(--boxshadow);
+    position: absolute;
+    top: 35%;
+    left: 36%;
+}
+#coroa{
+    width: 45px;
+    position: absolute;
+    top: -45px;
+    left: 15px;
+    filter: drop-shadow(1px 1px 5px  var(--boxshadow));
+}
+.medalhas{
+    width: 35px;
+    height: 35px;
+}
+.medalhas#prata{
+    position: absolute;
+    top: -10px;
+    left: -13px; 
+
+}
+.medalhas#bronze{
+    position: absolute;
+    top: -10px;
+    right: -13px; 
+}
+.medalhas#ouro{
+    position: absolute;
+    top: -10px;
+    left: -13px; 
+}
+section#checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    width: 100%;
+    height: 5vh;
+}
+section#lista{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+div.colocacao{
+    display: flex;
+    width: 80%;
+    height: 5vh;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 10pt;
+    color: var(--corTexto);
+    border: solid 0.5px var(--margem);
+    margin: 10px;
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+div#foto{
+    width: 20px;
+    height: 20px;
+    background-color: var(--corQuadros);
+}
+#pontos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 3px;
+    width: 60%;
+}
+
+/*---------------checkBox estilizado------------------------*/
+.opcaoranking{
+    width: 5.8rem;
+    height: 1.2rem;
+    border-radius: 8px;
+    background-color: var(--corQuadros);
+}
+#powerbuttom{
+    display: none;
+}
+.toglle{
+    width: 3rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #004B83;
+    border-radius: 8px;
+    transition: .3s cubic-bezier(0.895, 0.07, 0.585, 0.68);
+}
+.toglle::before{
+    content: 'Amigos';
+    color: white;
+    text-transform: uppercase;
+    font-size: 0px;
+}
+.toglle::after{
+    content: 'Geral';
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+#powerbuttom:checked + .toglle{
+    left: 2.8rem;
+    background-color: #004B83;
+}
+#powerbuttom:checked + .toglle::after{
+    font-size: 0;
+}
+#powerbuttom:checked + .toglle::before{
+    font-size: 10px;
+}

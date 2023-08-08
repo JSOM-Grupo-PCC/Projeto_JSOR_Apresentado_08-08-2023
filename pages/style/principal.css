@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--corFundo);
+}
+:root {
+    --corTexto: #FFFFFF;
+    --corAzul: #004B83;
+    --azulLua: #005ea6;
+    --corFundo: #2E3834;
+    --corQuadros: #3A4540;
+    --navegation: #222327;
+}
+.white-mode:root {
+    --corTexto: black;
+    --corFundo: #E8E8E8;
+    --corQuadros: #BDBDBD;
+    --navegation: #BDBDBD;
+}
+section#principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+div.cartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 130px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--corAzul);
+    color: white;
+    font-size: 10pt;
+    text-align: left;
+    position: relative;
+}
+h1{
+    font-weight: 100;
+}
+#sino{
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+}
+#star{
+    width: 30px;
+    position: absolute;
+    bottom: -15px;
+    left: -5px;
+}
+/*------@media------------------------*/
+@media screen and (min-width: 1000px) {
+    div.cartao{
+        width: 450px;
+        height: 170px;
+        font-size: 14pt;
+    }
+    #sino{
+        width: 90px;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+    #star{
+        width: 50px;
+        position: absolute;
+        bottom: -30px;
+        left: -15px;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    div.cartao{
+        width: 600px;
+        height: 250px;
+        font-size: 18pt;
+    }
+    #sino{
+        width: 110px;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+    #star{
+        width: 70px;
+        position: absolute;
+        bottom: -30px;
+        left: -15px;
+    }
+}

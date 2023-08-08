@@ -1,0 +1,130 @@
+@media screen and (min-width: 380px) {
+    section#podio{
+        width: 340px;
+        background-color: transparent;
+        height: 140px;
+    }
+    #podio .left{
+        align-items: flex-end;
+        margin-right: 50px;
+        height: 140px;
+    }
+    #podio .right{
+        align-items: flex-start;
+        margin-left: 50px;
+        height: 140px;
+    }
+    .imagem_ganhador#primeiro_lugar{
+        top: 25%;
+        left: 36%;
+    }
+    #podio .imagem_ganhador{
+        width: 110px;
+        height: 100px;
+    }
+    #coroa{
+        top: -45px;
+        left: 32px;
+    }
+    .texto{
+        width: 100px;
+        background-color: transparent;
+        padding-top: 8px;
+        line-height: 16px;
+        font-size: 12pt;
+    }
+    #vencedor{
+        bottom: -35px;
+    }
+    section#lista{
+        width: 340px;
+    }
+    div.colocacao{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 900px) {
+    section#lista{
+        width: 500px;
+    }
+    section#podio{
+        width: 500px;
+        background-color: transparent;
+        height: 200px;
+    }
+    #podio .left{
+        align-items: flex-end;
+        margin-right: 65px;
+        height: auto;
+    }
+    #podio .right{
+        align-items: flex-start;
+        margin-left: 70px;
+        height: auto;
+    }
+    .medalhas{
+        width: 45px;
+        height: 45px;
+    }
+    .imagem_ganhador#primeiro_lugar{
+        top: 25%;
+        left: 36%;
+    }
+    #podio .imagem_ganhador{
+        width: 150px;
+        height: 140px;
+    }
+    #coroa{
+        width: 60px;
+        top: -60px;
+        left: 38px;
+    }
+    .texto{
+        width: 140px;
+        background-color: transparent;
+        padding-top: 8px;
+        line-height: 16px;
+        font-size: 14pt;
+    }
+    #vencedor{
+        bottom: -35px;
+    }
+    section#checkbox{
+        margin-top: 10vh;
+    }
+    .opcaoranking{
+        width: 7.2rem;
+        height: 1.6rem;
+    }
+    .toglle{
+        display: flex;
+        justify-content: center;
+        width: 4rem;
+        height: 1.6rem;
+    }
+    #powerbuttom:checked + .toglle{
+        left: 3.2rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    section#lista{
+        width: 50%;
+    }
+    div.colocacao{
+       height: 8vh;
+       justify-content: space-between;
+    }
+    #info{
+        font-size: 14pt;
+        width: 30%;
+    }
+    div#foto{
+        width: 40px;
+        height: 40px;
+    }
+    #pontos{
+        width: 50%;
+    }
+}
+
+

@@ -1,0 +1,99 @@
+@media screen and (max-width:377px){
+    div.info_desempenho{
+        width: 80%;
+        font-size: 9pt;
+    }
+    div#titulo{
+        font-size: 11pt;
+        font-weight: 500;
+    }
+    button#editar_perfil{
+        width: 90px;
+    }
+}
+@media screen and (min-width:480px){
+    div#foto_perfil{
+        width: 45%;
+    }
+    div.info_desempenho{
+        width: 60%;
+        font-size: 9pt;
+    }
+}
+@media screen and (min-width:650px){
+    div#foto_perfil{
+        width: 40%;
+        height: 55%;
+    }
+    div.info_desempenho{
+        width: 55%;
+        font-size: 9pt;
+    }
+    section#dados_perfil{
+        font-size: 14pt;
+    }
+}
+@media screen and (min-width:720px){
+    div#foto_perfil{
+        width: 30%;
+        height: 50%;
+    }
+    div.info_desempenho{
+        width: 45%;
+        font-size: 9pt;
+    }
+    
+}
+@media screen and (min-width:1000px){
+    div#foto_perfil{
+        width: 25%;
+    }
+    div.info_desempenho{
+        width: 42%;
+    }
+}
+@media screen and (min-width:1150px){
+    div#foto_perfil{
+        width: 20%;
+    }
+    div.info_desempenho{
+        width: 37%;
+    }
+}
+@media screen and (min-width:1300px){
+    div#foto_perfil{
+        width: 16%;
+    }
+    div.info_desempenho{
+        width: 34%;
+    }
+}
+/*-------height--------------------------*/
+@media screen and (min-height: 740px) {
+    div#foto_perfil{
+        height: 40%;
+    }
+}
+@media screen and (min-height:1000px){
+    div#foto_perfil{
+        width: 40%;
+    }
+    section#dados_perfil{
+        font-size: 20pt;
+    }
+    p#texto_email{
+        font-size: 16pt;
+    }
+    div.info_desempenho{
+        width: 54%;
+        font-size: 12pt;
+    }
+    div#titulo{
+        font-size: 16pt;
+        padding: 10px;
+    }
+    div#conteudo{
+        padding: 12px;
+    }
+
+}

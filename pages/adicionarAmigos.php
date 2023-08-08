@@ -140,7 +140,7 @@ if (isset($_POST['search'])) {
         <section class="navigation">
             <ul>
                 <li class="list">
-                    <a href="perfil.php">
+                    <a href="./perfil.php">
                         <span class="icon">
                             <ion-icon name="person-circle-sharp"></ion-icon>
                         </span>
@@ -157,7 +157,7 @@ if (isset($_POST['search'])) {
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="./ranking.php">
                         <span class="icon">
                             <ion-icon name="podium-sharp"></ion-icon>
                         </span>
@@ -165,7 +165,7 @@ if (isset($_POST['search'])) {
                     </a>
                 </li>
                 <li class="list active">
-                    <a href="adicionarAmigos.php">
+                    <a href="./adicionarAmigos.php">
                         <span class="icon">
                             <ion-icon name="person-add-sharp"></ion-icon>
                         </span>

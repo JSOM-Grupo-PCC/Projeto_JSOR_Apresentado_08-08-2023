@@ -1,8 +1,8 @@
 <div align="center">
     <img src="https://github.com/JSOR-Smart-Schedule/Projeto_JSOR_Apresentado_08-08-2023/assets/115905335/70ad2e44-9059-438d-af12-ef8d27bd9356" alt="Logo JSOR">
 <img>
-
-<h1 align="center">JSOR Smart Schedule<h1><hr>
+<hr>
+<h1 align="center">JSOR Smart Schedule<h1>
 <h3 align="center">Sistema de Gerenciamento de Tarefas</h3>
 <br> 
 <h4>1. VISÃO GERAL DO CONTEXTO</h4>
